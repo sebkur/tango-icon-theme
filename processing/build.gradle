@@ -1,0 +1,56 @@
+wrapper {
+    gradleVersion = '6.5.1'
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+
+group = pGroup
+version = pVersion
+
+if (project.hasProperty("topobyte")) {
+    apply from: 'file:///' + System.getProperty("user.home") \
+        + '/.gradle/topobyte.gradle'
+}
+
+repositories {
+    maven {
+        url 'https://mvn.topobyte.de'
+    }
+    maven {
+        url 'https://mvn.slimjars.com'
+    }
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    implementation 'de.topobyte:system-utils:0.0.1'
+    implementation 'de.topobyte:melon-paths:0.0.3'
+    implementation 'org.slf4j:slf4j-simple:1.6.1'
+}
+
+task copyJars(type: Copy) {
+    into "$buildDir/lib-run"
+    from jar
+}
+
+task copyDeps(type: Copy) {
+    into "$buildDir/lib-run"
+    from configurations.runtimeClasspath
+}
+
+task createRuntime(dependsOn: [copyJars, copyDeps]) {
+    description 'Setup the execution environment for the main scripts'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
+}
