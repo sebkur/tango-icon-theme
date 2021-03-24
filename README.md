@@ -195,6 +195,9 @@ they follow [the new naming scheme][2].
 ![](scalable/mimetypes/x-office-spreadsheet-template.svg)
 ![](scalable/mimetypes/x-office-spreadsheet.svg)
 
+## misc
+![](scalable/misc/password-preferences.svg)
+
 ## places
 ![](scalable/places/folder-remote.svg)
 ![](scalable/places/folder-saved-search.svg)
