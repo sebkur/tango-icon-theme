@@ -6,9 +6,19 @@ around the 22x22px version. For GNOME and KDE you will also need
 icon-naming-utils that allow the theme to work in these environments before
 they follow [the new naming scheme][2].
 
+## Information about the Tango icons elsewhere on the web
+
+There's a [Wikipedia article][3]. Also Wikimedia Commons has
+[a page][4] about the icons that includes more icons than the ones
+available in this repository.
+The [Gnome desktop icons] are also similar but contains more and
+partially different icons than Tango.
 
 [1]: http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines
 [2]: http://tango.freedesktop.org/Standard_Icon_Naming_Specification
+[3]: https://en.wikipedia.org/wiki/Tango_Desktop_Project
+[4]: https://commons.wikimedia.org/wiki/Tango_icons
+[5]: https://commons.wikimedia.org/wiki/GNOME_Desktop_icons
 
 ## actions
 ![](scalable/actions/address-book-new.svg)
