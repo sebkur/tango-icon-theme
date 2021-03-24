@@ -9,3 +9,6 @@ they follow [the new naming scheme][2].
 
 [1]: http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines
 [2]: http://tango.freedesktop.org/Standard_Icon_Naming_Specification
+
+![](scalable/actions/address-book-new.svg)
+![](scalable/actions/appointment-new.svg)
