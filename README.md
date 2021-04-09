@@ -206,7 +206,14 @@ partially different icons than Tango.
 ![](scalable/mimetypes/x-office-spreadsheet.svg)
 
 ## misc
+![](scalable/misc/appointment.svg)
+![](scalable/misc/bookmark.svg)
+![](scalable/misc/contact.svg)
+![](scalable/misc/document.svg)
+![](scalable/misc/mail-message.svg)
 ![](scalable/misc/password-preferences.svg)
+![](scalable/misc/tab.svg)
+![](scalable/misc/window.svg)
 
 ## places
 ![](scalable/places/folder-remote.svg)
