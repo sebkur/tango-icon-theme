@@ -1,0 +1,7 @@
+#!/bin/bash
+
+DIR=$(dirname $0)
+CMD="$DIR/tango-processing.sh"
+CLASS="de.topobyte.tango.GeneratePngs"
+
+exec "$CMD" "$CLASS" "$@"

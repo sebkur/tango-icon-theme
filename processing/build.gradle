@@ -30,6 +30,8 @@ targetCompatibility = 1.8
 dependencies {
     implementation 'de.topobyte:system-utils:0.0.1'
     implementation 'de.topobyte:melon-paths:0.0.3'
+    implementation 'de.topobyte:process-utils:0.1.0'
+    implementation 'com.google.guava:guava:19.0'
     implementation 'org.slf4j:slf4j-simple:1.6.1'
 }
 
